@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+  <title>Contact me</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-family: 'Sacramento', cursive;
+            font-size:60px;
+            margin-top: 150px;
+            background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration:underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: #f32170;
+        }
+    </style>
+    <h1>
+        Contact me
+    </h1>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="POST" action="send-email.php">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+
+</body>
